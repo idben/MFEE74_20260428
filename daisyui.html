@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./css/daisyui.css">
   <title>daisyui</title>
 </head>
-<body class="bg-stone-200 flow-root">
+<body class="bg-stone-200 min-h-screen flow-root">
   <div class="container mx-auto p-4 m-4">
     <div class="card bg-base-100 w-96 shadow-sm">
       <figure>
@@ -19,6 +19,35 @@
         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
         <div class="card-actions justify-end">
           <button class="btn btn-xl btn-accent btn-soft">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- The button to open modal -->
+    <label for="my_modal_6" class="btn">open modal</label>
+
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal" role="dialog">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">This modal works with a hidden checkbox!</p>
+        <div class="modal-action">
+          <label for="my_modal_6" class="btn">Close!</label>
         </div>
       </div>
     </div>
