@@ -1,0 +1,25 @@
+{
+  "name": "20260428",
+  "version": "1.0.0",
+  "description": "* [電子版講義](https://doc.sagedaben.com/MFEE74)\r * [今天的程式碼](https://github.com/idben/MFEE74_20260428)",
+  "main": "index.js",
+  "scripts": {
+    "css": "tailwindcss -i ./src/test01.css -o ./css/test01.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idben/MFEE74_20260428.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/idben/MFEE74_20260428/issues"
+  },
+  "homepage": "https://github.com/idben/MFEE74_20260428#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}
