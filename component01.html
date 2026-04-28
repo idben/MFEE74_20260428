@@ -11,6 +11,9 @@
       --color-brand-500: #fd0da5;
       --color-brand-900: #90095E;
       --color-danger: #c40f21;
+      --font-sans: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      --font-brand: "Roboto", "Helvetica Neue", sans-serif;
+      --font-mono: ui-monospace, Menlo, monospace;
     }
     @layer base{
       h1{
@@ -52,9 +55,9 @@
       <button class="btn btn-blue bg-amber-500">新按鈕</button>
       <button class="btn btn-gray bg-ben-500">新按鈕</button>
       <button class="btn btn-red bg-brand">新按鈕</button>
-      <div class="text-brand-500/10 text-6xl">TEST</div>
-      <div class="text-brand-500/30 text-6xl">TEST</div>
-      <div class="text-brand-500/50 text-6xl">TEST</div>
+      <div class="text-brand-500/10 text-6xl font-sans">TEST</div>
+      <div class="text-brand-500/30 text-6xl font-brand">TEST</div>
+      <div class="text-brand-500/50 text-6xl font-mono">TESTtest</div>
       <div class="text-brand-500/80 text-6xl">TEST</div>
       <div class="text-danger/50 text-6xl">TEST2</div>
     </div>
