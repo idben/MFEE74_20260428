@@ -36,6 +36,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #0d6efd;
+    --color-primary-border: #0C5ED9;
     --color-primary-dark: #4E91F6;
     --color-secondary: #6c757d;
     --color-secondary-dark: #5c636a;
@@ -342,6 +343,9 @@
     }
   }
   .btn-primary {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    border-color: var(--color-primary-border);
     background-color: var(--color-primary);
     color: var(--color-white);
     &:hover {
@@ -386,10 +390,16 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
+      --tw-border-style: solid;
     }
   }
 }

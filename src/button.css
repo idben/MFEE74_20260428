@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @theme{
   --color-primary: #0d6efd;
+  --color-primary-border: #0C5ED9;
   --color-primary-dark: #4E91F6;
   --color-secondary: #6c757d;
   --color-secondary-dark: #5c636a;
@@ -23,7 +24,7 @@
   } */
 
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary-dark;
+    @apply bg-primary text-white hover:bg-primary-dark border-[2px] border-primary-border;
     &:focus{
       @apply outline-blue-700
     }
