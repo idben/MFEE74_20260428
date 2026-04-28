@@ -20,6 +20,10 @@
       --font-myfont1: "WDXL Lubrifont JP N", sans-serif;
       --spacing-card-x: 24px;
       --spacing-card-y: 12px;
+      --breakpoint-p500: 500px;
+      --breakpoint-p1000: 1000px;
+      --breakpoint-p1500: 1500px;
+      --breakpoint-p2000: 2000px;
     }
     @layer base{
       h1{
@@ -70,6 +74,7 @@
     <div class="card bg-indigo-400 px-card-x py-card-y">
       123
     </div>
+    <div class="mt-4 h-[100px] bg-amber-200 p500:bg-blue-400 p1000:bg-sky-600 p1500:bg-amber-800 p2000:bg-amber-900"></div>
   </div>
 </body>
 </html>
