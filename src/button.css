@@ -1,1 +1,16 @@
 @import "tailwindcss";
+@theme{
+  --color-primary: #0d6efd;
+  --color-primary-dark: #4E91F6;
+  --color-secondary: #6c757d;
+  --color-secondary-dark: #5c636a;
+  --color-danger: #dc3545;
+  --color-danger-dark: #bb2d3b;
+}
+@layer base{}
+@layer components{
+  .btn{
+    @apply px-4 py-2 rounded-md font-normal select-none cursor-pointer inline-block;
+  }
+}
+@layer utilities{}
