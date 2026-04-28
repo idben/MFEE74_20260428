@@ -11,9 +11,27 @@
 @layer components{
   .btn{
     @apply px-4 py-2 rounded-md font-normal select-none cursor-pointer inline-block;
+    &:disabled{
+      @apply bg-gray-300 text-gray-500 cursor-not-allowed hover:bg-gray-300;
+    }
   }
-  .btn:disabled{
-    @apply bg-gray-300 text-gray-500 cursor-not-allowed;
+  /* .btn:disabled{
+    @apply bg-gray-300 text-gray-500 cursor-not-allowed hover:bg-gray-300;
+  } */
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+    &:disabled {
+      @apply bg-sky-200 text-sky-400 hover:bg-sky-200;
+    }
+  }
+
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark;
+  }
+  .btn-danger {
+    @apply bg-danger text-white hover:bg-danger-dark;
   }
 }
 @layer utilities{}
