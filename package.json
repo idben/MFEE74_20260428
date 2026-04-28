@@ -4,7 +4,7 @@
   "description": "* [電子版講義](https://doc.sagedaben.com/MFEE74)\r * [今天的程式碼](https://github.com/idben/MFEE74_20260428)",
   "main": "index.js",
   "scripts": {
-    "css": "tailwindcss -i ./src/test01.css -o ./css/test01.css --watch"
+    "css": "tailwindcss -i ./src/button.css -o ./css/button.css --watch"
   },
   "repository": {
     "type": "git",
