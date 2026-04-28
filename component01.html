@@ -18,10 +18,12 @@
       --font-brand: "Roboto", "Helvetica Neue", sans-serif;
       --font-mono: ui-monospace, Menlo, monospace;
       --font-myfont1: "WDXL Lubrifont JP N", sans-serif;
+      --spacing-card-x: 24px;
+      --spacing-card-y: 12px;
     }
     @layer base{
       h1{
-        @apply text-4xl font-extrabold py-4;
+        @apply text-4xl font-extrabold py-card-x;
       }
     }
     @layer components{
@@ -64,6 +66,9 @@
       <div class="text-brand-500/50 text-6xl font-mono">TESTtest</div>
       <div class="text-brand-500/80 text-6xl font-myfont1">TEST 測試</div>
       <div class="text-danger/50 text-6xl">TEST2</div>
+    </div>
+    <div class="card bg-indigo-400 px-card-x py-card-y">
+      123
     </div>
   </div>
 </body>
