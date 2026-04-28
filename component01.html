@@ -24,6 +24,12 @@
         @apply bg-red-500 text-white hover:bg-red-600;
       }
     }
+
+    @layer utilities{
+      .bg-ben-500{
+        background-color: #32b609;
+      }
+    }
   </style>
   <title>封裝(組件)</title>
 </head>
@@ -36,8 +42,8 @@
       <button class="px-4 py-2 rounded font-medium select-none cursor-pointer bg-red-500 text-white hover:bg-red-600">按鈕</button>
     </div>
     <div>
-      <button class="btn btn-blue bg-rose-500">新按鈕</button>
-      <button class="btn btn-gray">新按鈕</button>
+      <button class="btn btn-blue bg-amber-500">新按鈕</button>
+      <button class="btn btn-gray bg-ben-500">新按鈕</button>
       <button class="btn btn-red">新按鈕</button>
     </div>
   </div>
