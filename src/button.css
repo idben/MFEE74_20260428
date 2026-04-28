@@ -11,6 +11,9 @@
 @layer components{
   .btn{
     @apply px-4 py-2 rounded-md font-normal select-none cursor-pointer inline-block;
+    &:hover{
+      @apply text-lg font-bold;
+    }
     &:disabled{
       @apply bg-gray-300 text-gray-500 cursor-not-allowed hover:bg-gray-300;
     }
@@ -21,6 +24,9 @@
 
   .btn-primary {
     @apply bg-primary text-white hover:bg-primary-dark;
+    &:focus{
+      @apply outline-blue-700
+    }
     &:disabled {
       @apply bg-sky-200 text-sky-400 hover:bg-sky-200;
     }
