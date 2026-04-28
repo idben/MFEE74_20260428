@@ -15,7 +15,7 @@
     --color-sky-400: oklch(74.6% 0.16 232.661);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -354,7 +354,7 @@
       }
     }
     &:focus {
-      outline-color: var(--color-blue-700);
+      outline-color: var(--color-blue-950);
     }
     &:disabled {
       background-color: var(--color-sky-200);
