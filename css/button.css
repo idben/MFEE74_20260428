@@ -17,6 +17,9 @@
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
+    --color-purple-500: oklch(62.7% 0.265 303.9);
+    --color-purple-600: oklch(55.8% 0.288 302.321);
+    --color-rose-600: oklch(58.6% 0.253 17.585);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -313,7 +316,52 @@
     }
   }
 }
-@layer base;
+@layer base {
+  a {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 4px;
+    border-bottom-color: var(--color-blue-500);
+    color: var(--color-blue-500);
+    &:visited {
+      border-bottom-color: var(--color-purple-500);
+    }
+    &:visited {
+      color: var(--color-purple-600);
+    }
+    &:hover {
+      @media (hover: hover) {
+        border-radius: calc(infinity * 1px);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        --tw-border-style: none;
+        border-style: none;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-500);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        padding: calc(var(--spacing) * 1);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+    &:active {
+      background-color: var(--color-rose-600);
+    }
+    &:active {
+      color: var(--color-white);
+    }
+  }
+}
 @layer components {
   .btn {
     display: inline-block;

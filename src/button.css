@@ -8,7 +8,21 @@
   --color-danger: #dc3545;
   --color-danger-dark: #bb2d3b;
 }
-@layer base{}
+@layer base {
+  a {
+    @apply border-b-4 border-b-blue-500 text-blue-500
+    &:visited{
+      @apply text-purple-600 border-b-purple-500;
+    }
+    &:hover{
+      @apply bg-blue-500 text-white p-1 rounded-full border-none
+    }
+    &:active{
+      @apply text-white bg-rose-600;
+    }
+  }
+}
+
 @layer components{
   .btn{
     @apply px-4 py-2 rounded-md font-normal select-none cursor-pointer inline-block;
