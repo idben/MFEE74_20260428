@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme{
+      --color-primary: #0d6efd;
+      --color-primary-border: #0C5ED9;  
+      --color-primary-dark: #4E91F6;
+      --color-secondary: #6c757d;
+      --color-secondary-dark: #5c636a;
+      --color-danger: #dc3545;
+      --color-danger-dark: #bb2d3b;
+      --color-bg: var(--color-blue-400);
+      --color-fg: var(--color-slate-900);
+      --color-btn-bg: var(--color-rose-400);
+      --color-btn-text: var(--color-rose-100);
+    }
+    @layer components{
+      .btn{
+        @apply px-4 py-2 rounded-md font-normal select-none cursor-pointer inline-block;
+        &:hover{
+          @apply text-lg font-bold;
+        }
+        &:disabled{
+          @apply bg-gray-300 text-gray-500 cursor-not-allowed hover:bg-gray-300;
+        }
+      }
+      .btn-primary {
+        @apply bg-primary text-white hover:bg-primary-dark border-[2px] border-primary-border;
+        &:focus{
+          @apply outline-blue-950
+        }
+        &:disabled {
+          @apply bg-sky-200 text-sky-400 hover:bg-sky-200;
+        }
+      }
+    }
+    :root.dark {
+      --color-bg: var(--color-slate-900);
+      --color-fg: white;
+      --color-btn-bg: var(--color-rose-800);
+      --color-btn-text: white;
+    }
+  </style>
+  <title>Dark Mode</title>
+</head>
+<body class="flow-root">
+  <div class="container mx-auto p-4 m-4">
+      <div class="w-50 h-30 rounded grid place-items-center text-3xl bg-bg text-fg">內容</div>
+      <button class="btn bg-btn-bg text-btn-text">切換主題</button>
+
+  </div>
+
+  <script>
+    const html = document.documentElement;
+    const key = "theme";
+    const saved = localStorage.getItem(key);
+    if(saved) html.classList.toggle("dark", saved === "dark");
+    document.querySelector("button").addEventListener("click", function(){
+      const result = html.classList.toggle("dark") ? "dark" : "light";
+      localStorage.setItem(key, result)
+    });
+  </script>
+</body>
+</html>
