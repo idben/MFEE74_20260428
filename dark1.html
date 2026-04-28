@@ -49,6 +49,10 @@
     const key = "theme";
     const saved = localStorage.getItem(key);
     if(saved) html.classList.toggle("dark", saved === "dark");
+    document.querySelector("button").addEventListener("click", function(){
+      const result = html.classList.toggle("dark") ? "dark" : "light";
+      localStorage.setItem(key, result)
+    });
   </script>
 </body>
 </html>
