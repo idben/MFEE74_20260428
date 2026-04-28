@@ -4,7 +4,7 @@
   "description": "* [電子版講義](https://doc.sagedaben.com/MFEE74)\r * [今天的程式碼](https://github.com/idben/MFEE74_20260428)",
   "main": "index.js",
   "scripts": {
-    "css": "tailwindcss -i ./src/form2.css -o ./css/form2.css --watch"
+    "css": "tailwindcss -i ./src/daisyui.css -o ./css/daisyui.css --watch"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/typography": "^0.5.19"
+    "@tailwindcss/typography": "^0.5.19",
+    "daisyui": "^5.5.19"
   }
 }
