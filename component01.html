@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
     @theme {
@@ -14,6 +17,7 @@
       --font-sans: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
       --font-brand: "Roboto", "Helvetica Neue", sans-serif;
       --font-mono: ui-monospace, Menlo, monospace;
+      --font-myfont1: "WDXL Lubrifont JP N", sans-serif;
     }
     @layer base{
       h1{
@@ -58,7 +62,7 @@
       <div class="text-brand-500/10 text-6xl font-sans">TEST</div>
       <div class="text-brand-500/30 text-6xl font-brand">TEST</div>
       <div class="text-brand-500/50 text-6xl font-mono">TESTtest</div>
-      <div class="text-brand-500/80 text-6xl">TEST</div>
+      <div class="text-brand-500/80 text-6xl font-myfont1">TEST 測試</div>
       <div class="text-danger/50 text-6xl">TEST2</div>
     </div>
   </div>
