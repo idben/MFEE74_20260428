@@ -1,2 +1,30 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms" { strategy: "class" };
+
+@layer components {
+  .input1{
+    @apply rounded-md border-gray-300 shadow-sm focus:border-indigo-300/50 focus:ring focus:ring-indigo-200;
+  }
+  .select1{
+    @apply rounded-md border-gray-300 shadow-sm focus:border-indigo-300/50 focus:ring focus:ring-indigo-200;
+  }
+  .textarea1{
+    @apply rounded-md border-gray-300 shadow-sm focus:border-indigo-300/50 focus:ring focus:ring-indigo-200;
+  }
+  .checkbox1{
+    @apply rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200/50;
+  }
+
+  .input2{
+    @apply mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black;
+  }
+  .select2{
+    @apply mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black;
+  }
+  .textarea2{
+    @apply mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black;
+  }
+  .checkbox2{
+    @apply border-gray-300 border-2 text-black focus:border-gray-300 focus:ring-black;
+  }
+}
