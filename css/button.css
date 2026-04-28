@@ -15,6 +15,7 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-white: #fff;
@@ -319,6 +320,11 @@
     font-weight: var(--font-weight-normal);
     -webkit-user-select: none;
     user-select: none;
+  }
+  .btn:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-500);
   }
 }
 @layer utilities;
